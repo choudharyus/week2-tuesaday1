@@ -294,7 +294,7 @@ Don't scan the JS file for errors. Open up your Dev Tools and follow their error
 
 ## One More Challenge (15min)
 
-Open the file [stacktrace.html](stacktrace.html) file and see if you can figure out how to fix the one single error in the inline JavaScript. Open up your Dev Tools and view the error and figure out what's wrong.
+Open the file [stacktrace.html](starter_code/practice_03) file and see if you can figure out how to fix the one single error in the inline JavaScript. Open up your Dev Tools and view the error and figure out what's wrong.
 
 ***
 
