@@ -298,6 +298,13 @@ Open the file [stacktrace.html](starter_code/practice_03) file and see if you ca
 
 ***
 
+## Bonus Material
+Instructor will review adding debugger keywork and breakpoints to troubleshoot errors.
+
+- [Scotch - Guide to Chrome Dev Tools](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints) (Very thorough)
+- [Google Tutorial - Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools/)
+
+
 <a name="conclusion"></a>
 ## Conclusion  
 - Review independent practice solution
