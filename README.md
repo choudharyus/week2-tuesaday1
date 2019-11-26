@@ -15,7 +15,20 @@
 - Create arrays and access/manipulate elements in arrays.
 
 
----
+### Instructions
+
+1. Fork and clone this repository.
+1. Change into the new directory.
+1. Add a remote back to the original class repo (not your own forked version)..hint: **git remote add remote class-repo-url**
+
+### Tip Of The Day
+Open files in Chrome using the terminal by copy/pasting the following into your terminal. **It must be >> instead of >**.  Running this will add a shortcut to your .bash_profile to open files in Chrome
+
+```
+echo "alias chrome='open -a \"Google Chrome.app\"'" >> ~/.bash_profile
+```
+
+
 <a name="opening"></a>
 ## Opening  
 - Review current lesson objectives.
@@ -59,9 +72,36 @@ Uncaught Error: Oh, noes.       index.html:6
 Note that the line with `console.log("Such is life.")` will _never run_. This is one of the things that can make writing JavaScript frustrating at first. One little error in your code can prevent any of your code from running!
 
 > **Note**: Don't worry too much about the syntax of how to throw an error; you won't be creating your own custom errors very often in this class. We're just showing this so you know what "magic" is going on under the surface.
+> 
+
+#### Try Catch Finally Blocks
+Good reference from W3Schools on [try/catch/finally](https://www.w3schools.com/jsref/jsref_try_catch.asp)
+
+
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Errors</title>
+    <script>
+	    try {
+	    	throw(new Error("Oh, noes."));
+	    }catch(err) {
+	       console.log("Such is life.", err);
+	    }finally {
+	       console.log("any last tasks to do?")
+	    }
+    </script>
+  </head>
+  <body></body>
+</html>
+```
+
 
 <a name="assets/#common-errors"></a>
 ## Independent Practice: Common Errors  
+
 
 Now that we know a little bit about what an error is and when it is thrown, let's look at some of the most common errors that you will run into in JS.
 
@@ -126,7 +166,7 @@ function shoutLongWords (word) {
 
 JavaScript has [7 error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Error_types). Three of them will account for 99% of the errors you encounter in this class, so we're going to focus on those.
 
-
+An additioanl reference from W3Schools error types [try/catch/finally](https://www.w3schools.com/js/js_errors.asp)
 
 Check: What might these three words mean in the context of JavaScript?
 
@@ -134,13 +174,11 @@ Check: What might these three words mean in the context of JavaScript?
 - Reference
 - Type
 
-<br>
-
 
 <a name="tools-debugging"></a>
 ## Tools for Debugging  
 
-> **Note**: If the `"Preserve log"` checkbox is checked in your Chrome console, uncheck it. When it's checked, it doesn't clear error messages when you refresh your page. This can make your console get *really* ugly *really* quickly.
+> **Note**: Instructor to walk students through confirming that that the `"Preserve log"` checkbox is not checked in Chrome console. When it's checked, it doesn't clear error messages when you refresh your page. This can make your console get *really* ugly *really* quickly.
 
 #### Reading Error Messages
 
@@ -169,7 +207,7 @@ Be thoughtful about your debugging! Instead of just placing `console.log` statem
 Let's see this in action by taking a quick look at a code example.
 
 <a name="debug"></a>
-## Independent Practice: Debug  
+## Independent Practice: Debug & Fix (20min)
 
 Check out the starter code inside [starter\_code/practice\_01](starter_code/practice_01) for a calculator program that isn't running correctly.
 Don't scan the JS file for errors. Open up your Dev Tools and follow their errors to figure out what's wrong.
@@ -241,7 +279,7 @@ If the answer doesn't look promising, go to the next one. Repeat until the answe
 
 If none of the answers are promising, go on to the next thing that turned up on Google.
 
-You can get [badges](assets/stackoverflow.com/help/badges) and [special privileges](assets/stackoverflow.com/help/privileges) on Stack Overflow by asking good questions and giving good answers!
+You can get **badges** and **special priveledges** on Stack Overflow by asking good questions and giving good answers!
 
 
 #### Mozilla Developer Network
@@ -249,10 +287,14 @@ You can get [badges](assets/stackoverflow.com/help/badges) and [special privileg
 Mozilla Developer Network (MDN) is another excellent resource. It contains loads of tutorials, references, and documentation for any questions you might have regarding HTML, CSS, and JavaScript.
 
 <a name="fizz-buzz"></a>
-## Independent Practice  
+## Independent Practice (20min)
 
 Check out the starter code inside [starter\_code/practice\_02](starter_code/practice_02) for a fizzbuzz program that isn't working.
 Don't scan the JS file for errors. Open up your Dev Tools and follow their errors to figure out what's wrong.
+
+## One More Challenge (15min)
+
+Open the file [stacktrace.html](stacktrace.html) file and see if you can figure out how to fix the one single error in the inline JavaScript. Open up your Dev Tools and view the error and figure out what's wrong.
 
 ***
 
@@ -280,5 +322,5 @@ Developer tools are the first place developers look for clues when something is 
 		- [Part 2](https://youtu.be/VbfB1qB20Yk)
 - Readings
 	- [Google Tutorial - Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools/)
-	- [Scotch - Guide to Chrome Dev Tools](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints) (Beg - Very thorough)
+	- [Scotch - Guide to Chrome Dev Tools](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints) (Very thorough)
 	- [Debugging in JS](http://eloquentjavascript.net/08_error.html)
